@@ -34,6 +34,11 @@ body{
     color: #FFC2A8;
     border-bottom: 0.25rem solid #FFC2A8;
     padding-bottom: 0.43rem;
+    display: inline-block;
+    color: #FFC2A8;
+    border-bottom: 0.25rem solid #FFC2A8;
+    padding-bottom: 0.43rem;
+    animation: text-flicker 2s infinite, color-change 3s infinite;
 }
 i{
     cursor: pointer;
@@ -65,4 +70,28 @@ i{
     width: 2rem;
     margin-right: 0.6rem;
     color: white;
+}
+
+@keyframes text-flicker {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes color-change {
+    0% {
+        color: #FFC2A8;
+    }
+    50% {
+        color: #FF5733;
+    }
+    100% {
+        color: #FFC2A8;
+    }
 }
